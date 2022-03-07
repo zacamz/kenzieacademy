@@ -1,13 +1,11 @@
-const button = document.querySelector('button');
 
-button.addEventListener('click', event => {
-  if (details.open) 
-      
-  
-});
+function openAll() {
+    document.getElementsByTagName("details")[0].setAttribute("open", "true"); 
+}
 
-const createTitle = function () {
-    document.write("<h1>Page Title</h1>");
-  }
-
-  createTitle()
+let openAllButton = document.getElementsByClassName("openall");
+if (openAllButton.addEventListener)
+    openAllButton.addEventListener("click", openAll,)
+    
+    else if (openAllButton.attachEvent)
+    openAllButton.attachEvent('onclick', openAll)
