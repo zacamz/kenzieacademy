@@ -5,7 +5,7 @@ function openAll() {
 
 let openAllButton = document.getElementsByClassName("openall");
 if (openAllButton.addEventListener)
-    openAllButton.addEventListener("click", openAll,)
+    openAllButton.addEventListener("click", openAll(),)
     
     else if (openAllButton.attachEvent)
-    openAllButton.attachEvent('onclick', openAll)
+    openAllButton.attachEvent('onclick', openAll())
